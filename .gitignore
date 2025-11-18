@@ -1,3 +1,36 @@
-node_modules/
+# Node modules (should not be copied)
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+
+# Build output (your Dockerfile builds it inside container)
+dist
+
+# Env files (never copy into container)
 .env
-dist/
+.env.* 
+
+# Git stuff
+.git
+.gitignore
+
+# Docker ignore itself
+.dockerignore
+
+# OS / editor files
+.DS_Store
+.vscode
+.idea
+
+# Local files
+coverage
+tmp
+*.swp
